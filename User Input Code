@@ -1,0 +1,2 @@
+NumberOfRecipes = int(input("How many meals are you planning? "))
+
