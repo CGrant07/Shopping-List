@@ -4,19 +4,24 @@ Ingredients = {}
 ListOfIngredients = []
 for meals in range(NumberOfRecipes):
     ListOfMeals.append(input("List one of the meals: "))
-
-print(ListOfMeals)
+print("\n\n\nList of Meals\n--------------")
 for i in range(NumberOfRecipes):
+    print(ListOfMeals[i])
+print("\n\n\n")
+for i in range(NumberOfRecipes):
+    print("""\nIf you have listed all the ingredients for the meal
+    and are ready to move on to the next recipe, please type: next\n""")
     while True:
         Ingredient = str(input("what is an ingredient in " + ListOfMeals[i] + "? "))
-        print(Ingredient)
+        #print(Ingredient)
         if Ingredient == "next":
             ListOfIngredients = []
             break
         else:
             ListOfIngredients.append(Ingredient)
             Ingredients[ListOfMeals[i]] = ListOfIngredients
-            print(Ingredients)
+            print(Ingredients[ListOfMeals[i]])
 
-
+#for i in range(NumberOfRecipes)
+    
 
