@@ -22,6 +22,10 @@ for i in range(NumberOfRecipes):
             Ingredients[ListOfMeals[i]] = ListOfIngredients
             print(Ingredients[ListOfMeals[i]])
 
-#for i in range(NumberOfRecipes)
-    
+
+print("\n\n\nYour Shopping list is: \n -----------------------\n")
+for i in range(NumberOfRecipes):
+    for z in range(len(Ingredients[ListOfMeals[i]])):
+        print(Ingredients[ListOfMeals[i]][z])
+
 
